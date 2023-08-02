@@ -1,0 +1,7 @@
+div{
+    height: 400px;
+    width: 800px;
+    background-image: url('manikanta.jpeg');
+    background-size: cover;
+    border:5px dashed green;
+}
