@@ -1,0 +1,33 @@
+.a{
+    background-color:rgb(63, 249, 63);
+    color: white;
+    border-radius: 3PX;
+    padding: 4px;
+}
+.i{
+    background-color: aqua;
+    color: white;
+    border-radius: 3PX;
+}
+.b{
+    background-color: red;
+    color:white;
+    border-radius: 3PX;
+    padding: 4px;
+    
+}
+.i{
+    padding: 4px;
+    background-color:blue ;
+    color: white;
+}
+.j{
+    border:2px solid blue;
+    color: blue;
+    padding: 2px;
+}
+.n{
+    margin-top: 2px solid blue ;
+    height:4px ;
+    width:750px ;
+}
