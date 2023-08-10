@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"><STYLE>
+        
+img{
+    height: 80%;
+    width: 90%;
+}
+button{
+    width: 100%;
+}
+.btn btn-primary mt-4{
+    background-color: blueviolet;
+}
+hr{
+    width:40%;
+}
+.e{
+    text-decoration:none ;
+}
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.divider-text .span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+    </STYLE>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <img src="act.jpg" alt="">
+            <h2>Create an Account</h2><p><em>Create an minimal registration page using Bootstrap 4 <br>HTML form elements.<br>Snippel by <a href="">Bootstrapious</a></em></p>
+        </div>
+        <div class="col">
+            <form>
+                <div class="input-group mt-4">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control mt-4" placeholder="Firstname">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control mt-4" placeholder="Lastname">
+                </div>
+                <div class="input-group mt-4">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="Email" class="form-control mt-4" placeholder="Email">
+                </div>
+                <div class="input-group mt-4">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-square-phone"></i></span>
+                    <input type="tel" class="form-control mt-4" placeholder="Phone Number">
+                </div>
+                <div class="input-group mt-4">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-circle-up"></i></span>
+                <select class="form-select mt-4">
+                    <option>Choose your Job</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <div class="input-group mt-4">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control mt-4" placeholder="password">
+                    <span class="input-group-text mt-4"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control mt-4" placeholder="Confirm password">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary mt-4">Create your account</button>
+                </div>
+                <div class="divider-text"><span>OR</span></div>
+                <div>
+                    <button type="button" class="btn btn-primary mt-3"><i class="fa-brands fa-facebook"></i>  Continue with Facebook</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary mt-3"><i class="fa-brands fa-twitter"></i>  Continue with Twitter</button>
+                </div><center>
+                Already Registered? <a class="e" href=""> Login</a>
+            </center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

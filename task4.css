@@ -1,3 +1,7 @@
-div{
-    border:5px ;
+.col-sm-1{
+    box-sizing: border-box;
+    /* margin:10px; */
+    margin-top:30px;
+}
+.col-sm-5{
 }

@@ -1,6 +1,9 @@
-div{
-    height: 300px;
-    width: 300px;
-    background-color: pink;
-    border:5px dotted red;
+.col-3{
+    background-color: aqua;
+}
+.col-6{
+    background-color: yellow;
+}
+.col-3{
+    background-color: green;
 }
