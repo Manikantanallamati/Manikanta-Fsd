@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body>
+<body><script>
+    //  Types of Alerts 
+    // 1. alert() or Windowalert()
+    // 2. confirm()
+    // 3. prompt()
+     
+    alert("succcessfully completed.")
+    
+     var b = 'Manikanta'
+     var c =confirm("Are you sure u want to delete Record Mr."+b+"?")
+     if(c==true){
+         alert("Successfully Deleted")
+     }else{
+         alert("Not Deleted")
+     }
 
-<div class="container mt-3">
-  <h2>Alerts</h2>
-  <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
-  <div class="alert alert-success">
-    <strong>Success!</strong> This alert box could indicate a successful or positive action.
-  </div>
-  <div class="alert alert-info">
-    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-  </div>
-  <div class="alert alert-warning">
-    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-  </div>
-  <div class="alert alert-danger">
-    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-  </div>
-  <div class="alert alert-primary">
-    <strong>Primary!</strong> Indicates an important action.
-  </div>
-  <div class="alert alert-secondary">
-    <strong>Secondary!</strong> Indicates a slightly less important action.
-  </div>
-  <div class="alert alert-dark">
-    <strong>Dark!</strong> Dark grey alert.
-  </div>
-  <div class="alert alert-light">
-    <strong>Light!</strong> Light grey alert.
-  </div>
-</div>
+    var d=prompt("Enter Anything from the Keyboard")
+    var e=prompt("Enter anything from the keyboard")
+    // adding two prompt values: 
+    // parseInt --> converts into a string
+    //method - 1: eval = evaluate --> it means adding , subtracting , divison , multiplication
+    document.write(eval(d+"+"+e))
+    //method - 2:
+    document.write(+d+(+e))
 
+</script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.c{
+    background-color: rgb(200, 194, 194);
+    height: 100vh;
+}
+.a{
+    padding-top: 80px;
+    margin-left: 130px;
+}
+.col-md-9{
+    background-color: white;
+}
+.col-md-1{
+    background-color: white;
+}
+
+.z{
+    color: rgb(56, 186, 56);
+}

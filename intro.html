@@ -3,42 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css"> 
+    <title>JS | introduction</title>
 </head>
 <body>
-    <h1 class="bg-success">Bootstrap</h1><center>
-    <div class="container">
-    <div class="row">
-        <div class="col-1 bg-danger">1</div>
-        <div class="col-1 bg-primary">1</div>
-        <div class="col-1 bg-secondary">1</div>
-        <div class="col-1 bg-success">1</div> 
-        <div class="col-1 bg-danger">1</div> 
-        <div class="col-1 bg-primary">1</div> 
-        <div class="col-1 bg-secondary">1</div> 
-        <div class="col-1 bg-success">1</div> 
-        <div class="col-1 bg-danger">1</div> 
-        <div class="col-1 bg-primary">1</div> 
-        <div class="col-1 bg-secondary">1</div> 
-        <div class="col-1 bg-success" >1</div> 
-    </div>
-    <div class="row">
-        <div class="col-md-4 bg-danger">2</div> 
-        <div class="col-md-4 bg-success">2</div> 
-        <div class="col-md-4 bg-primary">2</div> 
-    </div>
-    <div class="row">
-    <div class="col-4 bg-success">3</div>
-    <div class="col-8 bg-secondary">3</div>
-    </div>
-    <div class="row">
-        <div class="col bg-primary">4</div>
-        <div class="col bg-danger">4</div> 
-    </div>
-    <div class="row">
-        <div class="col-12 bg-success">5</div>
-    </div></div></center>
+    <h1>Javascript Introduction</h1>
+    <script>
+        // var a = 10
+        // a = 35
+        name = 'mani'
+        document.write(name.length)
+        document.write("<br>")
+        name += ' kanta'
+        document.write(name.length)
+        // document.write(a)
+        // document.write(" Mani : ",a)
+        document.write("<br>")
+        name = 'Mani'
+        name += ' Srinu'
+        name += ' & Bhargav'
+        document.write("<br>")
+        document.write(name)
+        var c 
+        document.write(c)
+        document.write("<br>")
+        var 
+        d = 'mani'
+        d = 10.33
+        document.write(d)
+        document.write("<br>")
+        var e = ' Manikanta '
+        alert(e)
+        var f = 22.34
+        console.log(f)
+        document.write(typeof(d))
+        var arr=[10,'Mani',20]
+        document.write("<br>"+arr)
+        var g = true;
+        document.write("<br>"+typeof(g))
+        console.log(arr)
+        document.write("<br>"+arr[1]+"<br>")
 
+        var Students = [{
+            'name':'Mani' ,
+            'Rollno': 9,
+            'college': 'ACOE',
+            'branch':'ECE'
+        },
+        {
+            'name':'Kanta',
+            'Rollno': 8,
+            'college': 'ACOE',
+            'branch':'ECE'
+        },
+        {
+            'name':'Nallamati',
+            'Rollno': 7,
+            'college': 'ACOE',
+            'branch':'ECE'
+        },
+        {
+            'name':'Srinu',
+            'Rollno': 6,
+            'college': 'ACOE',
+            'branch':'ECE'
+        },
+        {
+            'name':'Bhargav',
+            'Rollno': 5,
+            'college': 'ACOE',
+            'branch':'ECE'
+        }]
+        //  console.log(Students[0].name)
+        //  console.log(Students[0].Rollno)
+        // console.log(Students[0].college)
+        //  console.log(Students[0].branch)
+        // console.log(Students[1].name)
+        //  console.log(Students[1].Rollno)
+        // console.log(Students[1].college)
+        //  console.log(Students[1].branch)
+        for (var i=0; i<Students.length; i++){
+             document.write ("<br>"+(i+1)+". " + Students[i].name+"<br> "+ "  "+Students[i].Rollno+"<br> "+Students[i].college+"<br> "+Students[i].branch)
+        }
+
+    </script>
+    <!-- <script src="external.js"></script> -->
 </body>
 </html>

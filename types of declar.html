@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let, var and const</title>
+</head>
+<body>
+    <script>
+
+        //there are 3 types in Declaration of variables 
+        // 1. var
+        // 2. let
+        // 3. const
+
+
+        //Global scope Variable
+
+        var a=20;
+        a=10;
+        document.write(a+"<br>")
+
+        let b=30;
+        
+        //let b=40;//error b already declared we cannot redeclare the variable, But we can change the variable value
+        b = 40
+        document.write(b+"<br>")
+        //block scope variable
+        {
+            let myself='Manikanta'
+            document.write(myself+"<br>")
+        }
+        // document.write(myself)//not possible because it was declared in the block scope
+       
+        // const is used for the fixed values
+
+        const pi = 3.14;
+
+        // pi=333//It was an error
+        document.write(pi)
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.a{
+    background-color: green;
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius:5px ;
+    text-decoration: none;
+}
+.b{
+    background-color: lightseagreen;
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius:5px ;
+    text-decoration: none;
+}
+.c{
+    background-color: red;
+    box-sizing: border-box;
+    padding: 5px;
+    color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius:5px ;
+    text-decoration: none;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.container{
+    background-color: rgb(188, 185, 185);
+}
+.d{
+    margin-top: 20px;
+    border: 2px solid white;
+    background-color: white;
+}
+i{
+    color: #07f702;
+}
+.z{
+    background-color: white;
+}
