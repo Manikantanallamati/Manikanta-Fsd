@@ -1,30 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swapping Task</title>
     <style>
-         div{
-            border: 10px ridge rgb(255, 183, 0);
-            background-color: rgb(245, 10, 10);
-            text-align: center;
-            height: 400px;
-            -webkit-mask: radial-gradient(40px,#0000 98%,#000) 10000% 10000%/99.5% 99.5%;
-            height: 100px;
-            width: 500px;
-
+        *{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
         }
-        
-        p{
-            color: aliceblue;
+        div{
+            gap: 30px;
+        }
+        img{
+            height: 200px;
+            width: 550px;
+            cursor: pointer;
+        }
+        .leftimage,.rightimage{
+            height: 200px;
+            width: 550px;
+            float: left;
+            border: 2px solid black;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .btn{
+            position: relative;
+            top: 225px;
+            left: 60px;
+            width: 80px;
+            height: 80px;
+            background-color: gold;
+            color: black;
+            font-style: bold;
+            font-size: 50px;
+            cursor: pointer;
+            border-radius: 25px;
         }
     </style>
 </head>
 <body>
-    <div >
-        <p>This is a div with a border image <br>
-            and three lines of text <br> 
-            making it much bigger then the original image</p>
+    <div class="main" style="height: 705px;width: 1520px;padding: 10px;display: flex;">
+        <div class="left" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="5.jpg" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="6.jpeg" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="7.jpg" class="leftimage" onclick="selectleft(this)"></img>
+        </div>
+        <div class="middle" style="height: 670px;width: 200px;">
+            <button class="btn" onclick="moveright()">&#8594;</button>
+            <br><br><br><br>
+            <button class="btn" onclick="moveleft()">&#8592;</button>
+        </div>
+        <div class="right" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="8.jpg" class="rightimage" onclick="selectright(this)"></img>
+            <img src="9.jpg" class="rightimage" onclick="selectright(this)"></img>
+            <img src="whiye.jpg" class="rightimage" onclick="selectright(this)"></img>
+        </div>
+        <script>
+            var leftsrc="",imageleft,rightsrc="",imageright;
+            function selectleft(leftimg){
+                if(!leftimg.src.match("white.jpg")){
+                    if(leftsrc!=""){
+                        imageleft.style.borderColor="black";
+                    }
+                    leftsrc=leftimg.src;
+                    imageleft=leftimg;
+                    leftimg.style.borderColor="blue";
+                }
+            }
+            function selectright(rightimg){
+                if(!rightimg.src.match("white.jpg")){
+                    if(rightsrc!=""){
+                        imageright.style.borderColor="black";
+                    }
+                    rightsrc=rightimg.src;
+                    imageright=rightimg;
+                    rightimg.style.borderColor="blue";
+                }
+            }
+            function moveleft(){
+                if(rightsrc!=""){
+                    var res=document.getElementsByClassName("leftimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("white.jpg")){
+                            res[i].src=rightsrc;
+                            rightsrc="";
+                            imageright.src="white.jpg";
+                            break;
+                        }
+                    }
+                    imageright.style.borderColor="black";
+                }
+            }
+            function moveright(){
+                if(leftsrc!=""){
+                    var res=document.getElementsByClassName("rightimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("white.jpg")){
+                            res[i].src=leftsrc;
+                            leftsrc="";
+                            imageleft.src="white.jpg";
+                            break;
+                        }
+                    }
+                    imageleft.style.borderColor="black";
+                }
+            }
+        </script>
     </div>
-    
 </body>
 </html>

@@ -15,8 +15,8 @@
         }
     </style>
 </head>
-<body><center>
-    <table border="" style="height: 300px;width: 600px;border: 1px; margin: 20px;padding: 20px;">
+<body style="background-color: blue;"><center>
+    <table border="" style="height: 300px;width: 600px;border: 1px; margin: 20px ;padding: 20px;background-color: yellow; border: 3px solid black;">
         <tbody>
             <tr>
                 <td colspan="4" style="height: 30px;text-align: right;"id="result_id"></td>
@@ -49,7 +49,6 @@
     </table></center>
     <script>
         function getnum(val){
-       
             if(val =='='){
                 var res = document.getElementById('result_id').innerText;
                 document.getElementById('result_id').innerText = eval(res);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="myform" onsubmit="return validateForm()">    
+First Name:<input type="text" name="fname" id="fname_id" placeholder=" First Name"><br><br>
+Second Name:<input type="text" name="lname" id="lname_id" placeholder="Second Name"><br><br>
+    <select style="height: 20px;width:400px;border-radius:10px"name="Names" onchange="sa(this.value)">
+        <option value="">--Select Name--</option>
+        <option value="Mani">Mani</option>
+        <option value="Jaanu">Jaanu</option>
+    </select>
+    <input type="button" onclick="sample()" value="Submit form">
+    <input type="button" onclick="resetform()" value="Reset">
+</form><script>
+        function sample(){
+            document.getElementById('myform').submit()
+        }
+        function resetform(){
+            document.getElementById('myform').reset()
+        }
+    </script>
+</body>
+</html>

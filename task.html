@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <input type="button" name="Show" value="Show" onclick="show()" /> -->
+    <!-- <input type="button" name="hide" value="hide" onclick="hide()" /> -->
+    <button onclick="show()">show</button>
+    <button onclick="hide()">Hide</button>
+    <div id="ab" style="background-color: rgb(126, 25, 0); height: 300px;width:300px; border:2px solid black">
+    </div>
+  
+<script>
+    function show(){
+        document.getElementById('ab').style.display='block';
+        // document.getElementById('ab').style.background='red';
+        // document.getElementById('ab').style.height='300px';
+    }  
+    function hide(){
+        document.getElementById('ab').style.display='none'; 
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        #main{
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+        }
+        td{
+            text-align: center;
+        }
+        button{
+            background-color: rgb(206, 20, 244);
+            height: 60px;
+            width: 300px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        #result{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type="number"]{
+            height: 25px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="main">
+            <table height="200px" width="400px">
+                <tr>
+                    <td>1</td>
+                    <td>2 </td>
+                    <td>3</td>
+                    <td>4 </td>
+                    <td>5 </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" value="1" name="num" class="num"></td>
+                    <td><input type="radio" value="2" name="num" class="num"></td>
+                    <td><input type="radio" value="3" name="num" class="num"></td>
+                    <td><input type="radio" value="4" name="num" class="num"></td>
+                    <td><input type="radio" value="5" name="num" class="num"></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <button onclick="fun()">Play</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="number" id="system">
+                    </td>
+                </tr>
+            </table>
+            <p id="result"></p>
+        </div>
+    </center>
+</body>
+<script>
+    function fun(){
+        var k=document.getElementsByClassName('num');
+        console.log(k);
+        for(i=0;i<k.length;i++){
+            if(k[i].checked){
+                res=k[i].value;
+                break;
+            }
+        }
+        document.getElementById('system').value=Math.floor(Math.random()*6);
+        var s= document.getElementById('system').value;
+        if (res == s){
+            document.getElementById('result').innerHTML="You Won..!" ;
+        }
+        else{
+            document.getElementById('result').innerHTML="You Lost..!" ;
+        }
+    }   
+</script>
+</html>

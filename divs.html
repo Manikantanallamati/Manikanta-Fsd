@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        
+        <div style="">
+            <img src="5.jpg" alt="" style="height: 350px; width: 250px; float: left ;margin: 25px;" onclick="getimage('5.jpg')">
+            <img src="8.jpg" alt="" style="height: 350px; width: 250px; float: left;margin: 25px;" onclick="getimage('8.jpg')">
+            <img src="7.jpg" alt="" style="height: 350px; width: 250px; float: left;margin: 25px;" onclick="getimage('7.jpg')">
+        </div>
+        <div style="height: 350px;width: 300px;float:right;margin-top:25px;margin-left:20px ;margin-right: 20px;"id="output_id"></div>
+    </div>
+    <script>
+        function getimage(img_path){
+            document.getElementById('output_id').innerHTML = "<img src='"+img_path+"'style ='width:350px;height:450px'/>" 
+        }
+    </script>
+</body>
+</html>

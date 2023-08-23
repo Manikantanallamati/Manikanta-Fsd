@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .a{
-            height: 200px;
-            width:600px ;
-            margin:10px solid grey;
-            border: 5px solid orangered;
-            padding: 40px;
+    <STYLE>
+        input{
+            outline: none;
         }
-        *{    
-            box-sizing: border-box;
-            margin: 12px;
-            padding: 12px;
-        } 
-    </style>
+    </STYLE>
 </head>
 <body>
-    <div class="a">Content</div>
+    <form>
+        <label  >First Name</label>
+        <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <label >Last Name</label>
+        <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <label >Email</label>
+        <input type="mail" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <label >Username</label>
+        <input type="text" onkeyup="sample(this.value)" id='ins_id'   ><br><br>
+        <label >Username</label>
+        <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <label >Gender</label>
+        <input type="radio" name="mani" onkeyup="sample(this.value)" id=ins_id>Male
+        <input type="radio" name="mani" onkeyup="sample(this.value)" id=ins_id>Female <br><br>
+        <label >DOB</label>
+        <input type="month"><br><br>
+        <button>Submit</button><button>Reset all</button>
+        <script>
+            function sample(str){
+            if(str.length<3){
+            document.getElementById('ins_id').style.border="5px solid red"
+        }else{
+            // document.getElementById('ins_id').style.display= "none";
+            document.getElementById('ins_id').style.border="2px solid black"
+        }
+    }
+        </script>
+    </form>
 </body>
 </html>

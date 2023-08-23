@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image task</title>
+</head>
+<body>
+ <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage() "src="original.jpg"width="300";>
+ <script type="text/javascript">
+ 	function setNewImage(){
+      document.getElementById("img1").src="cutted.jpg"
+ 	}
+ 	function setOldImage(){
+ 		document.getElementById("img1").src="original.jpg"
+ 	}
+ </script>
+</body>
+</html>

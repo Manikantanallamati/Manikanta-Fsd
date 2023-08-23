@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <select 
+        style="height: 20px;width:400px;border-radius:10px" onchange="sa(this.value)">
+            <option value= "">--Select Name--</option>
+            <option value="Mani">Mani</option>
+            <option value="Jaanu">Jaanu</option>
+        </select>
+        <p id="a"></p>
+    </center>
+    <script>
+        function sa(name){
+            document.getElementById('a').innerText = name;
+        }
+    </script>
+</body>
+</html>
