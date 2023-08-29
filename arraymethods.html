@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Methods in JavaScript</h2>
+    <h3>1. Map Method</h3>
+    <script>
+        
+        let names = ['Mani','Jaanu']
+        names.map(function(ele){
+            document.write(" Hello Dear " +ele+"<br><br>")
+        })
+        let name = ['Manikanta','Jaahnavi']
+        name.map(function(element,ind){
+            return console.log(ind[0])            
+        })
+        console.log(name)
+    let Trainer = [{
+        name : 'Mani',
+        No: '4G9'
+    },{
+        name :'Jaanu',
+        No:'36'
+    }]
+    console.log(Trainer)
+    </script>
+    <table border="" id="table_id"></table>
+    <script>
+        let trainer = [{
+            name : 'Mani',
+            rollno: '4G9'
+        },{
+            name:'Jaanu',
+            rollno:'36'
+        }
+    ]
+        let tr='';
+        trainer.map(function(elem,i,arr)
+        {
+            tr += "<tr><td>"+(i+1)+"</td><td>"+elem.name+"</td><td>"+elem.rollno+"</td><tr>";})
+                document.getElementById('table_id').innerHTML = tr
+    </script>
+</script>
+</body>
+</html>

@@ -7,28 +7,26 @@
 </head>
 <body>
     <table border="">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-<script>
-    let all = document.getElementsByTagName('td');
-    k = all.length 
-    for (var i=0; i<all.length; i++){
-        all[i].innerText = k-i;
-    }
-</script>
+        <thead>
+            <tr>
+                <th rowspan="2">S.No</th>
+                <th COLspan="2">College</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td colspan="2">ACOE</td>
+                <td>ECE</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td colspan="2">ACET</td>
+                <TD>ECE</TD>
+            </tr>
+
+        </tbody>
+    </table>
 </body>
 </html>

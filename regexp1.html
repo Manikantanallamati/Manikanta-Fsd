@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in_id">
+    <button onclick="Check_numornot()">Check Validity</button>
+    <br>
+    <span id="msg_id"></span>
+    <script>
+        function Check_numornot(){
+            re = /^[8][0-9]{9}$/       //numbers only upto 10 range
+            let n = document.getElementById('in_id').value;
+            output = re.test(n); //correct(by $)
+            if (output == true){
+                document.getElementById('msg_id').innerText = 'Correct';
+                document.getElementById('msg_id').style.color='green';
+            }
+            else{
+                document.getElementById('msg_id').innerText='Please Enter correct Format';
+                document.getElementById('msg_id').style.color='red'
+            }
+            //re = /^[a-z]+$/   --> for small letters
+            //re = /^[A-Z]+$/   -->for capital letters
+            //re = /^[A-Za-z]+$/   -->for small and capital letters
+            //re = /^[A-Za-z0-9]+$/   -->for numbers and letters
+            //re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+        }
+    </script>
+</body>
+</html>

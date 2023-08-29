@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expression</title>
+</head>
+<body>
+    <h2>Regular Expressions</h2>
+
+    <script>
+        let re = /Mani/g
+        let res = /mani/
+        let ress=/Mani/
+        let output = re.test("Manikanta Nallamati")
+        let output1 = res.test("Manikanta Nallamati")
+        let output2 = ress.exec("Manikanta Nallamati")
+        console.log(output)     //it will returns true or false if the Mani is in the given string or not
+        console.log(output1)
+        console.log(output2)
+
+        re = /^[0-9]{10}/           //valid upto 10 numbers but exceeded the range
+        re = /^[0-9]{10}$/          //valid upto 10 numbers not exceed range by $
+        re = /^[9][0-9]{9}$/             //  [9]-->starting letter must be starts with 9 
+        output3 = re.test("9978564124")
+        console.log(output3)
+    </script>
+</body>
+</html>

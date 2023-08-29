@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(rno){               //Here rno = 4G9
+                this.rollno = rno;          //rno value will stored in the rollno
+            }
+        }
+        let obj = new student('4G9')        //this is object declaration
+        console.log(obj.rollno)             //calling rollno by using the object
+    
+        class Myself{
+            constructor(manirno,fname,lname,clg){
+                this.myrno = manirno;
+                this.firstname = fname;
+                this.lastname = lname;
+                this.college = clg
+            }
+        }
+        let object = new Myself('4G9',"Mani","Jaanu","Aditya College")
+        console.log(object.myrno,object.firstname,object.lastname,object.college)
+
+        class car{
+            constructor(Model,color,length,height){
+                this.carmodel = Model;
+                this.carcolor = color;
+                this.carlength = length;
+                this.carheight = height;
+                this.getfullname = function(){
+                    return this.carmodel+""+this.carcolor
+                }
+            }
+        }
+        let cars = new car("BMW","Black","7ft","5ft")
+        console.log(cars.carmodel,cars.carcolor,cars.carheight,cars.carlength)
+        document.write(cars.getfullname())
+    </script>
+</body>
+</html>

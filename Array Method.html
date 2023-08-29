@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h3>This is map() function</h3>
+    <script>
+        let arr = ['1','2','3']
+        arr.map((ele,index,arr)=>{
+            document.write(ele*3+" ");
+        })
+    </script>
+    <h3>This is filter() function</h3>
+    <p id="demo"></p>
+<script>
+const numbers = [34, 3, 92 , 5];
+const over18 = numbers.filter(myFunction);
+document.getElementById("demo").innerHTML = over18;
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<h3>This is sort() Method</h3>
+<script>
+const fruits = ["5", "1", "2", "4"];
+fruits.sort();
+document.write(fruits)
+</script>
+
+<h3>ForEach() method</h3>
+<p id="d"></p>
+<script>
+    const c = [45, 4, 9, 16, 25];
+
+let txt = "";
+c.forEach(myFunction);
+document.getElementById("d").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value+" " ; 
+}
+</script>
+<h3>concat() Method</h3>
+<p id="e"></p>
+<script>
+const myGirls = ["Mani", "Bhargav"];
+const myBoys = ["Adi", "pooja"];
+const myChildren = myGirls.concat(myBoys);
+document.getElementById("e").innerHTML = myChildren;
+</script>
+
+<h3>every() Method</h3>
+<p id="f"></p>
+
+<script>
+const g = [45, 4, 9, 16, 25];
+let allOver18 = g.every(myFunction);
+
+document.getElementById("f").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+<h3>some() Method</h3>
+<p id="h"></p>
+<script>
+const ages = [3, 10, 18, 20];
+document.getElementById("h").innerHTML = ages.some(checkAdult);
+
+function checkAdult(age) {
+  return age > 18;
+}
+</script>
+
+<h3>includes() Methods</h3>
+    <p id="i"></p>
+<script>
+const j = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("i").innerHTML = j.includes("Mango");
+</script>
+
+<h3>join() method</h3>
+<p id="k"></p>
+<script>
+const l = ["Banana", "Orange", "Apple", "Mango"];
+let text = l.join();
+document.getElementById("k").innerHTML = text;
+</script>
+
+<h3>reduce() Method</h3>
+<p id="m"></p>
+<script>
+  const n = [175, 50, 25];
+  document.getElementById("m").innerHTML = n.reduce(myFunc);
+  function myFunc(total, num) {
+    return total - num;
+  }
+</script>
+
+<h3>find() Method</h3>
+<p id="o"></p>
+<script>
+const p = [3, 10, 18, 20];
+document.getElementById("o").innerHTML = p.find(checkAge);
+function checkAge(p) {
+  return p > 18;
+}
+</script>
+
+<h3>findIndex() Method</h3>
+<p id="q"></p>
+<script>
+const r = [3, 10, 18, 20];
+document.getElementById("q").innerHTML = r.findIndex(checkAge);
+function checkAge(s) {
+  return s > 10; 
+}
+</script>
+
+<h3>indexOf() Method</h3>
+  <p id="indexof"></p>
+  <script>
+    const bb = ["Banana", "Orange", "Apple", "Mango"];
+    let index = bb.indexOf("Banana");
+    document.getElementById("indexof").innerHTML = index;
+  </script>
+
+<h3>fill() Method</h3>
+<p id="u"></p>
+<script>
+const t = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("u").innerHTML = t.fill("Mani");
+</script>
+
+<h3>slice() Method</h3>
+<p id="slice"></p>
+<script>
+  const v = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+  const citrus = v.slice(1, 3);
+  
+  document.getElementById("slice").innerHTML = citrus;
+  </script>
+
+<h3>reverse() Method</h3>
+<p id="reverse"> </p>
+<script>
+  const w = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("reverse").innerHTML = w.reverse();
+  </script>
+
+<h3>push() Metthod</h3>
+<p id="push"></p>
+<script>
+  const x = ["Banana", "Orange", "Apple", "Mango"];
+  x.push("Mani");
+  document.getElementById("push").innerHTML = x;
+</script>
+
+  <h3>pop() Method</h3>
+  <p id="pop"></p>
+  <script>
+    const y = ["Banana", "Orange", "Apple", "Mango"];
+    y.pop();
+    document.getElementById("pop").innerHTML = y;
+  </script>
+
+  <h3>shift() Method</h3>
+  <p id="shift"></p>
+  <script>
+    const z = ["Banana", "Orange", "Apple", "Mango"];
+    z.shift();
+    document.getElementById("shift").innerHTML = z;
+  </script>
+
+<h3>unshift() Method</h3>
+  <p id="unshift"></p>
+  <script>
+    const aa = ["Banana", "Orange", "Apple", "Mango"];
+    aa.unshift("Lemon","Pineapple");
+    document.getElementById("unshift").innerHTML = aa;
+  </script>  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<H1>string methods</H1>
+<table border="" cellspacing="5">
+<tr>
+<td>M</td>
+<td>a</td>
+<td>n</td>
+<td>i</td>
+<td></td>
+<td>k</td>
+<td>a</td>
+<td>n</td>
+<td>t</td>
+<td>a</td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <!-- <td>10</td>  -->
+</tr>
+    </table>
+    <script>
+    let str = 'Manu and batch'
+    // document.write(str)
+    // document.write("<br>")
+    // document.write(typeof(str))
+    let str1 = new String('Nallamati')
+    // document.write("<br>")
+    // document.write(str1)
+
+    //  let str='Drive Ready' 
+     function ss(str){
+         document.write(str+"<br>")
+     }
+     ss("Uppercase ="+str.toUpperCase())
+     ss("lowercase = "+str.toLowerCase())
+     ss("includes method = "+str.includes('batch'))       //True
+     ss("includes method = "+str.includes('mani'))        //False
+     ss("Trim = "+str.trim() )                            //Removes white spaces front and back side of the string
+     let str2 = 'mani kanta';
+     console.log(str2.split(" "))
+     let str3 = 'Jaanu'
+     ss("Starts with ="+str3.startsWith('J'))               //Starting letter -->prints True
+     ss("Starts with ="+str3.startsWith('j'))               //Strating letter -->Prints False
+     ss("stops with ="+str3.endsWith('u'))                  //Ending letter   -->Prints True or False
+     ss("Slice method ="+str3.slice(2,5))                   //Slice method is a range fuction from where to where the output will be printed
+     ss("Slice Negative method ="+str3.slice(-5,-1))        //Negative method will collects the string from backside of the string
+     ss("Substring Method ="+str3.substr(1,4))
+     
+</script>
+</body>
+</html>

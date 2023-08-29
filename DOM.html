@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <img src="dom/5.png" alt="" Id="img"> 
+    <input type="text" value="mani" id="input">
+
+
+    <p id="red">Please Enter Name</p>
+    <p class="mani">Manikanta0</p>
+    <p class="mani">Manikanta1</p>
+    <p class="mani">Manikanta2</p>
+
+    <ul>
+        <li>Mani</li>
+        <li>Kanta</li>
+        <li>Nallamati</li>
+    </ul>
+<script>
+        let img1 = document.getElementById("img"+"<br>")
+        let inp = document.getElementById("input").style.border = "2px solid red";
+        document.write("<br><br>")
+        document.getElementById("red").style.color = "red"
+        //accessing by the index values
+        
+        let Mani =  document.getElementsByClassName('mani')
+        Mani[0].innerText = 'Manikanta Nallamati'
+        Mani[1].style.color='darkBlue'
+
+        //Accessing elements by tag name
+
+        // document.getElementsByTagName('')
+        
+        let lis = document.getElementsByTagName('li')
+        lis[0].style.fontSize = '40px';
+        lis[1].style.color='blue'
+    //document.querySelector('#idname','.classname','tagname')
+    </script>
+</body>
+</html>

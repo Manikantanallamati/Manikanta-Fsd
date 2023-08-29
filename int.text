@@ -1,0 +1,8 @@
+Differences between margin and padding --> margin will creates a space at outside of the border and padding will creates a space inside of the border
+Content-Box --> The width and height properties include the content, but does not include the padding, border, or margin
+Border-Box -->The width and height properties include the content, padding, and border, but do not include the margin.
+Required Attribute --> The required attribute is a boolean attribute. When present, it specifies that the element must be filled out before submitting the form.
+Visibility --> The visibility property specifies whether or not an element is visible.
+Hidden --> The element cannot visible.
+None --> The display property is the most important CSS property for controlling layout.It is commonly used with JavaScript to hide and show elements without deleting and recreating them.
+Pseudo class --> A pseudo-class is used to define a special state of an element.    

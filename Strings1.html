@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+</head>
+<body>
+	<h3>string methods</h3>
+<script type="text/javascript">
+	function gtst(str) {
+	document.write("<br>"+str)
+	}
+	let g='N Manikanta'
+	gtst(g);
+	gtst( "str length="+g.length);
+	gtst( "char at="+g.charAt(4))
+	gtst(g.indexOf('t'))
+	gtst(g.indexOf('hri'))
+	gtst("last index of="+g.lastIndexOf('a'))
+	let g2=' Jaahnavi ';
+	gtst("to lower case="+g2.toLowerCase())
+	gtst("to upper case="+g2.toUpperCase())
+	gtst("concatination of str="+g.concat(g2))
+	gtst("concatination of str="+g.concat(g2,g))
+    gtst("for removing spaces="+g2.trim())
+    console.log(g2.split(""))
+    let g3='raj&sit,ram';
+     console.log(g3.split("&"))
+     let g4='raju is my brother'
+      console.log(g4.startsWith('g'))
+      console.log(g4.startsWith("r"))
+      console.log(g4.endsWith("g"))
+      console.log(g4.endsWith("r"))
+      document.write(g4.endsWith("g"))
+      gtst("slice of str="+g.slice(0,4))
+      gtst("slice of str="+g.slice(-4))
+      gtst("slice of str="+g.slice(-4,-2))
+    gtst("includes of string ="+g4.includes('Full Stack Developer'))
+    gtst("charcodeAt of string ="+g4.charCodeAt('g'))
+      gtst('substring of string ='+g4.substring(1,4));
+  gtst('substring of string ='+g4.substring(-6));
+  gtst('substring of string ='+g4.substring(7,1));
+  gtst('repeat of string='+g4.repeat(3));
+  gtst('replace of string='+g4.replace('Mani','Jaanu'));
+     gtst("substr method="+g4.substr(0,6))
+     gtst('search method='+g4.search('my'));
+      gtst('valueOf method='+g3.valueOf());
+      var g5=50;
+      gtst('toString method='+g5.toString(3));
+       gtst('match method='+g4.match('bro'));
+      gtst('match method='+g4.match('brohy'));
+      gtst('split method='+g4.split(''))
+</script>
+</body>
+</html>

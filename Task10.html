@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Add, Edit, and Delete</title>
+</head>
+<body>
+    <h2>Table with Add, Edit, and Delete</h2>
+    <table id="myTable" border="1" cellspacing="0">
+        <tr>
+            <th>product id</th>
+            <th>Name</th>
+            <th>Price</th>
+             <th>Actions</th>
+        </tr>
+        <tr>
+            <td>456789</td>
+            <td>Realme mobile</td>
+            <td>16000</td>
+            <td><button onclick="editRow(this)">Edit</button><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>123456</td>
+            <td>iqoo mobile</td>
+            <td>18000</td>
+            <td><button onclick="editRow(this)">Edit</button><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+         <tr>
+            <td>365648</td>
+            <td>vivo mobile</td>
+            <td>20000</td>
+            <td><button onclick="editRow(this)">Edit</button><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+
+    <br>
+    <button onclick="addRow()" style="border-radius: 10px; background-color: skyblue;"> + Add Row</button>
+
+    <script>
+        function addRow() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(table.rows.length - 1);
+            var cell0 = row.insertCell(0);
+            var cell1 = row.insertCell(1);
+            var cell2= row.insertCell(2);
+             var cell3 = row.insertCell(3);
+              cell0.innerHTML = "<input type='text'>";
+            cell1.innerHTML = "<input type='text'>";
+            cell2.innerHTML = "<input type='text'>";
+            cell3.innerHTML = "<button onclick='saveRow(this)'>Save</button><button onclick='deleteRow(this)'>Delete</button>";
+        }
+
+        function editRow(button) {
+            var row = button.parentNode.parentNode;
+            var cells = row.getElementsByTagName("td");
+            for (var i = 0; i < cells.length - 1; i++) {
+                cells[i].innerHTML = "<input type='text' value='" + cells[i].innerText + "'>";
+            }
+            cells[cells.length - 1].innerHTML = "<button onclick='editRow(this)'>Save</button><button onclick='deleteRow(this)'>Delete</button>";
+            cells[cells.length - 1].innerHTML = "<button onclick='saveRow(this)'>Save</button><button onclick='deleteRow(this)'>Delete</button>";
+        }
+
+        function saveRow(button) {
+            var row = button.parentNode.parentNode;
+            var cells = row.getElementsByTagName("td");
+            for (var i = 0; i < cells.length - 1; i++) {
+                cells[i].innerHTML = cells[i].getElementsByTagName("input")[0].value;
+            }
+            cells[cells.length - 1].innerHTML = "<button onclick='editRow(this)'>Edit</button><button onclick='deleteRow(this)'>Delete</button>";
+        }
+
+        function deleteRow(button) {
+           var q= confirm('first enter the data')
+            if (q==true) {
+                var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            }
+            
+        }
+    </script>
+</body>
+</html>

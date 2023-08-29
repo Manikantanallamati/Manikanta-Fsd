@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     
+</head>
+<body>
+    <div>
+        <ol id="a_id"></ol>
+    </div>
+    <script>
+    let Trainer = [{
+        name : 'Mani',
+        No: '4G9',
+        college:'Acoe'
+    },{
+        name :'Jaanu',
+        No:'36',
+        college:'Aditya'
+    }]
+    // document.write(Trainer[0].name)
+    let ol = '';
+    Trainer.map(function(elem,i,arr){
+        ol += "<ol><li>"+elem.name +"</li><li>"+elem.No+"</li><li>"+elem.college+"</ol>"
+    })
+    document.getElementById('a_id').innerHTML=ol
+
+    </script>    
+</body>
+</html>
