@@ -15,26 +15,60 @@
         <label  >First Name</label>
         <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
         <label >Last Name</label>
-        <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <input type="text" onkeyup="sampl(this.value)" id='ins_i'><br><br>
         <label >Email</label>
-        <input type="mail" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <input type="mail" onkeyup="samp(this.value)" id='ins_d'><br><br>
         <label >Username</label>
-        <input type="text" onkeyup="sample(this.value)" id='ins_id'   ><br><br>
+        <input type="text" onkeyup="sam(this.value)" id='in'   ><br><br>
         <label >Username</label>
-        <input type="text" onkeyup="sample(this.value)" id='ins_id'><br><br>
+        <input type="text" onkeyup="sa(this.value)" id='insid'><br><br>
         <label >Gender</label>
-        <input type="radio" name="mani" onkeyup="sample(this.value)" id=ins_id>Male
-        <input type="radio" name="mani" onkeyup="sample(this.value)" id=ins_id>Female <br><br>
-        <label >DOB</label>
-        <input type="month"><br><br>
-        <button>Submit</button><button>Reset all</button>
+        <input type="radio" name="mani" onkeyup="sample(this.value)" id=r_id>Male
+        <input type="radio" name="mani" onkeyup="sample(this.value)" id=ra_id>Female <br><br>
+        
+    <!-- <label >DOB</label>
+      <input type="month"><br><br>-->
+        <button>Submit</button><button>Reset all</button> 
         <script>
             function sample(str){
             if(str.length<3){
             document.getElementById('ins_id').style.border="5px solid red"
-        }else{
+        }
+        else{
             // document.getElementById('ins_id').style.display= "none";
             document.getElementById('ins_id').style.border="2px solid black"
+        }
+    }
+            function sampl(str){
+            if(str.length<3){
+            document.getElementById('ins_i').style.border="5px solid red"
+        }
+        else{
+            // document.getElementById('ins_id').style.display= "none";
+            document.getElementById('ins_i').style.border="2px solid black"
+        }}
+        function samp(str){
+            if(str.length<3){
+            document.getElementById('ins_d').style.border="5px solid red"
+        }else{
+            // document.getElementById('ins_id').style.display= "none";
+            document.getElementById('ins_d').style.border="2px solid black"
+        }
+    }   
+        function sam(str){
+            if(str.length<3){
+            document.getElementById('in').style.border="5px solid red"
+        }else{
+            // document.getElementById('ins_id').style.display= "none";
+            document.getElementById('in').style.border="2px solid black"
+        }
+    }   function sa(str){
+            if(str.length<3){
+            document.getElementById('insid').style.border="5px solid red"
+        }
+        else{
+            // document.getElementById('ins_id').style.display= "none";
+            document.getElementById('insid').style.border="2px solid black"
         }
     }
         </script>
